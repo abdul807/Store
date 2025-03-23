@@ -1,0 +1,14 @@
+.meallist {
+ 
+    width: 50%;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+ 
+    align-items: center;
+   
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }

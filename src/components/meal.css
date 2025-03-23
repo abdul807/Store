@@ -1,0 +1,32 @@
+.meal-container {
+ 
+border-bottom: 1px solid gray;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 10px;
+  border-radius: 10px;
+  align-content: center;
+  justify-items: center;
+}
+
+.actions {
+  line-height: 30px;
+  align-items: center;
+}
+
+.amount{
+    margin-right: 20px;
+}
+
+.actions input{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.actions .btn{
+  background-color: orange;
+}
