@@ -1,14 +1,23 @@
 // import { useState } from 'react'
-import React from "react";
+import React, { useState } from "react";
 import "./ordermodal.css";
 import Button from "./Button";
 import { useStoreContext } from "../context/context";
 import MyOrder from "./MyOrder";
+import Details from "./Details";
+
 
 const OrderModal = (props) => {
+
+  
   const { Items } = useStoreContext();
+  const [showAddress, SetshowAddress] = useState(false);
+
+
+ 
+
   const Order = () => {
-    console.log("Ordering");
+    SetshowAddress(true);
   };
 
   const totalPrice = Items.reduce((curNumber, item) => {
@@ -28,7 +37,7 @@ const OrderModal = (props) => {
   return (
     <div className="backdrop">
       <div className="orderlist">
-        {Items.length == 0 ? (
+        {Items.length === 0 ? (
           <p>NO ITEMS ADDED</p>
         ) : (
           Items.map((item, index) => {
@@ -59,6 +68,8 @@ const OrderModal = (props) => {
             Close
           </Button>
         </div>
+          {showAddress && <Details />}
+       
       </div>
     </div>
   );

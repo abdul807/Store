@@ -15,11 +15,12 @@ const MealList = (props) => {
       {props.meals.map((meal, index) => {
         return (
           <Meal
-            name={meal.name}
+            name={meal.Name}
+            id={meal.id}
             
-            key={meal.name}
-            description={meal.description}
-            price={meal.price}
+            key={meal.Name}
+            description={meal.Description}
+            price={meal.Price}
             onAddToCArt={Savehandler}
           />
         );

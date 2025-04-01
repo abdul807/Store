@@ -5,3 +5,9 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
+.btn:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+    color: none;
+}

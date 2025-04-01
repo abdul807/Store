@@ -8,7 +8,8 @@ import { useStoreContext } from "../context/context";
 const Header = () => {
   // const [counter, Setcounter] = useState(0)
   const [showModal, setShowModal] = useState(false);
-const { Items } = useStoreContext();
+
+  const { Items } = useStoreContext();
   const ToShow = () => {
     setShowModal(true);
   };
@@ -18,21 +19,22 @@ const { Items } = useStoreContext();
     setShowModal(false);
   };
 
-  const numberOfCartItems= Items.reduce((curNumber,item)=>{
-    return curNumber + item.amount
-  },0)
+  // const Ordering = () =>{
+  //   SetshowAddress(true)
+  // }
+
+  const numberOfCartItems = Items.reduce((curNumber, item) => {
+    return curNumber + item.amount;
+  }, 0);
 
   // const numberOfCartItems = Items.length;
-  
-   
-
 
   return (
     <header className="header">
       <div className="logo">
         <h2>ReactMeals</h2>
       </div>
-      {showModal && <OrderModal onClose={CloseModal} />}
+      {showModal && <OrderModal onClose={CloseModal}  />}
 
       <div className="cart" onClick={ToShow}>
         <FontAwesomeIcon icon={faCartShopping} />

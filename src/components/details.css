@@ -1,0 +1,35 @@
+
+.order-details{
+    border: 1px solid red;
+   
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+  
+  .details form{
+    padding: 10px;
+  }
+  
+  
+  .details form input{
+    width: 50%;
+    margin: 10px;
+    padding: 10px 30px;
+  }
+  
+  .heading{
+    font-size: 20px;
+   text-transform: uppercase;
+  }
+  
+
+ .btn {
+    background-color: orange;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px 2px;
+  }
